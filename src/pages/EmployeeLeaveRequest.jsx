@@ -61,6 +61,7 @@ const EmployeeLeaveRequest = () => {
       console.log(leaveRequest)
       if (leaveRequest) {
         alert("request successfully sent")
+        window.location.reload()
       }
     } catch (error) {
       setError(error.response.data)
