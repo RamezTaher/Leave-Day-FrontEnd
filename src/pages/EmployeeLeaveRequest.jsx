@@ -112,10 +112,10 @@ const EmployeeLeaveRequest = () => {
                   <div>End Date</div>
                 </div>
                 <RangePicker
-                  size="large"
                   onChange={handleChange}
                   className="py-3 border-secondary-tint"
-                />{" "}
+                  size="large"
+                />
               </label>
 
               <div className="flex justify-center">
@@ -134,7 +134,7 @@ const EmployeeLeaveRequest = () => {
             <h1 className="text-2xl font-semiBold mb-6">
               Leave Request History
             </h1>
-            <table className="border-secondary-tint border-solid border-2 border-collapse w-full ">
+            <table className="border-secondary-tint border-solid border-2 border-collapse w-full table">
               <thead>
                 <tr>
                   <th>Leave Request ID</th>
