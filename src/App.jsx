@@ -4,6 +4,7 @@ import SignUp from "./pages/SignUp"
 import SignIn from "./pages/SignIn"
 import EmployeeDashboard from "./pages/EmployeeDashboard"
 import EmployeeLeaveRequest from "./pages/EmployeeLeaveRequest"
+import AdminDashboardEmployees from "./pages/AdminDashboardEmployees"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           path="/platform/leave-request/:id"
           element={<EmployeeLeaveRequest />}
         />
+        <Route path="/admin/employee" element={<AdminDashboardEmployees />} />
       </Routes>
     </>
   )

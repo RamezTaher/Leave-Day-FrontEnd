@@ -16,7 +16,7 @@ const EmployeeDashboard = () => {
   return (
     <>
       <Header />
-      <section className="">
+      <section>
         <div className="container mx-auto h-full py-10">
           <div className="grid grid-cols-2 gap-12">
             <div className="col-span-1 flex flex-col gap-6">

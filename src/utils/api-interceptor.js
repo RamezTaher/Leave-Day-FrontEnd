@@ -32,3 +32,5 @@ export const getLeaveTypeById = (id) =>
 // Employee
 export const getEmployeeById = (id) =>
   axios.get(`${API_URL}/employee/${id}`, config)
+
+export const getEmployees = () => axios.get(`${API_URL}/employee`, config)
