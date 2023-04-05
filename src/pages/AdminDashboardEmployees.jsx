@@ -25,12 +25,13 @@ const AdminDashboardEmployees = () => {
                 <tr>
                   <th>Employee ID</th>
                   <th>Name</th>
-                  <th>Leave Days Left</th>
+                  <th>Days Left</th>
                   <th>Department ID</th>
                   <th>Department Name</th>
                   <th>Phone</th>
                   <th>Email</th>
                   <th>Joined at</th>
+                  <th>Modify</th>
                 </tr>
               </thead>
               <tbody>

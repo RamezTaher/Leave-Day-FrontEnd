@@ -12,5 +12,5 @@
 
 .table * td,
 .table * th {
-  @apply border-solid border-secondary-tint border-[1px] py-2 px-5 text-center;
+  @apply border-solid border-secondary-tint border-[1px] py-2 px-3 text-center text-sm;
 }
