@@ -34,7 +34,6 @@ const Signup = () => {
   const signupHandler = async (event) => {
     event.preventDefault()
     setError("")
-    console.log(department)
     if (
       name === "" ||
       phone === "" ||
