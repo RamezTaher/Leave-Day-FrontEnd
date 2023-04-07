@@ -17,7 +17,7 @@ const EmployeeTableRow = ({ info }) => {
   }, [])
 
   const handleEdit = () => {
-    navigate(`/admin/employees/${info._id}`)
+    navigate(`/admin/employee/${info._id}`)
   }
   return (
     <tr>

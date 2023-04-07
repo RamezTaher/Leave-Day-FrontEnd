@@ -30,7 +30,11 @@ export const getLeaveTypeById = (id) =>
   axios.get(`${API_URL}/leave-type/${id}`, config)
 
 // Employee
+
 export const getEmployeeById = (id) =>
   axios.get(`${API_URL}/employee/${id}`, config)
-
 export const getEmployees = () => axios.get(`${API_URL}/employee`, config)
+export const deleteEmployee = (id) =>
+  axios.delete(`${API_URL}/employee/${id}`, config)
+export const updateEmployee = (id, data) =>
+  axios.put(`${API_URL}/employee/${id}`, data, config)
