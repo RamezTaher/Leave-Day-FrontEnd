@@ -7,6 +7,7 @@ import { getDepartments, postRegisterUser } from "../utils/api-interceptor"
 const Signup = () => {
   const navigate = useNavigate()
   const [departments, setDepartments] = useState([])
+  const [loading, setLoading] = useState(false)
 
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
@@ -62,6 +63,7 @@ const Signup = () => {
     }
 
     try {
+      setLoading(true)
       const user = await postRegisterUser({
         name,
         email,
@@ -70,9 +72,11 @@ const Signup = () => {
         phone,
       })
       if (user) {
+        setLoading(false)
         navigate("/auth/login")
       }
     } catch (error) {
+      setLoading(false)
       setError(error.response.data)
       console.log(error)
     }
