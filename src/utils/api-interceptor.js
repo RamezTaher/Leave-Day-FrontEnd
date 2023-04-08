@@ -18,6 +18,9 @@ export const getDepartmentById = (id) =>
   axios.get(`${API_URL}/department/${id}`, config)
 
 // Leave Request
+export const getLeaveRequests = (leaveRequestStatus) =>
+  axios.get(`${API_URL}/leave-request?status=${leaveRequestStatus}`, config)
+
 export const getLeaveRequestByEmployee = (id) =>
   axios.get(`${API_URL}/leave-request/employee/${id}`, config)
 

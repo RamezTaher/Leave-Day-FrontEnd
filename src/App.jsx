@@ -6,6 +6,8 @@ import EmployeeDashboard from "./pages/EmployeeDashboard"
 import EmployeeLeaveRequest from "./pages/EmployeeLeaveRequest"
 import AdminDashboardEmployees from "./pages/AdminDashboardEmployees"
 import AdminEditEmployee from "./pages/AdminEditEmployee"
+import AdminLeaveRequest from "./pages/AdminLeaveRequest"
+import AdminLeaveRequestDetails from "./pages/AdminLeaveRequestDetails"
 
 function App() {
   return (
@@ -21,6 +23,11 @@ function App() {
         />
         <Route path="/admin/employee" element={<AdminDashboardEmployees />} />
         <Route path="/admin/employee/:id" element={<AdminEditEmployee />} />
+        <Route path="/admin/leave-request" element={<AdminLeaveRequest />} />
+        <Route
+          path="/admin/leave-request/:id"
+          element={<AdminLeaveRequestDetails />}
+        />
       </Routes>
     </>
   )
