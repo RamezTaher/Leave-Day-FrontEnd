@@ -30,7 +30,7 @@ const AdminEditEmployee = () => {
         setLeaveDay(data.leaveDaysLeft)
       })
       .catch((err) => console.log(err))
-  }, [])
+  }, [urlID])
 
   const handleUpdate = async (e) => {
     e.preventDefault()

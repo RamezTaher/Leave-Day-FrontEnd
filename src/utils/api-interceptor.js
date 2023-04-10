@@ -21,11 +21,17 @@ export const getDepartmentById = (id) =>
 export const getLeaveRequests = (leaveRequestStatus) =>
   axios.get(`${API_URL}/leave-request?status=${leaveRequestStatus}`, config)
 
+export const getLeaveRequestById = (id) =>
+  axios.get(`${API_URL}/leave-request/${id}`, config)
+
 export const getLeaveRequestByEmployee = (id) =>
   axios.get(`${API_URL}/leave-request/employee/${id}`, config)
 
 export const postLeaveRequest = (data) =>
   axios.post(`${API_URL}/leave-request`, data, config)
+
+export const updateLeaveRequest = (id, data) =>
+  axios.put(`${API_URL}/leave-request/${id}`, data, config)
 
 // Leave Type
 export const getLeaveTypes = () => axios.get(`${API_URL}/leave-type`, config)

@@ -27,7 +27,9 @@ const AdminLeaveReqTableRow = ({ info }) => {
       </td>
 
       <td>
-        <Link to={`/admin/leave-request/${info?._id}`}>
+        <Link
+          to={`/admin/leave-request/${info?._id}?employee=${info.employee}`}
+        >
           <div className="h-full w-full flex items-center justify-center">
             <FaTimes size={18} />
           </div>
