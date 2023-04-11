@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = process.env.MY_VAR
+const API_URL = "https://leave-day-backend.onrender.com/api"
 console.log(API_URL)
 
 const api = axios.create({ baseURL: API_URL })
