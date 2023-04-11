@@ -1,7 +1,7 @@
 import axios from "axios"
 
-const API_URL = process.env.VITE_API
-console.log(API_URL)
+const API_URL = process.env.MY_VAR
+console.log(MY_VAR)
 
 const api = axios.create({ baseURL: API_URL })
 const config = { withCredentials: true }
