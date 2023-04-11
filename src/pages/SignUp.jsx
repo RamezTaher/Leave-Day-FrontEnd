@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { validateEmail } from "../utils/validator"
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
 import { getDepartments, postRegisterUser } from "../utils/api-interceptor"
+import Loader from "../components/Loader"
 
 const Signup = () => {
   const navigate = useNavigate()
